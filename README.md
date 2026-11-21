@@ -69,6 +69,14 @@ paypalmcp app:validate     # checks it, and asks PayPal for what the tools need
 `app:validate` sends four requests to each account, counted against its budget. `--offline`
 skips them; `--strict` exits 2 on a warning.
 
+| | all fine | warnings only | any failure |
+|---|---|---|---|
+| `app:validate` | 0 | 0 | 1 |
+| `app:validate --strict` | 0 | 2 | 1 |
+
+1 means failed, with the flag or without it: not the monitoring-plugin numbering, where 1 is a
+warning.
+
 ## REST apps
 
 **Give each account its own app, made for this server alone**, from the Apps & Credentials page
