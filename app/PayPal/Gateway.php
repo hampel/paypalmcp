@@ -198,9 +198,10 @@ class Gateway
                 $this->paypalSaid($e),
             ),
             $e instanceof NotPermittedException => sprintf(
-                'PayPal refused %s permission for this. A transaction search or balance needs Transaction Search ticked '
-                .'on the app in PayPal\'s developer dashboard, and a change there can take until the cached token '
-                .'expires (up to nine hours) to apply. PayPal said: %s',
+                'PayPal refused %s permission for this: the app lacks a feature it needs. Transactions and balances '
+                .'need Transaction Search ticked on the app in PayPal\'s developer dashboard; reading subscriptions '
+                .'needs a feature of its own, which Transaction Search alone does not grant. A change to an app\'s '
+                .'features reaches its token only when that token expires, up to nine hours. PayPal said: %s',
                 $whose,
                 $this->paypalSaid($e),
             ),
