@@ -86,7 +86,7 @@ and status included, so every question about a month shares one cached copy of i
 
 ## Payers: name, email, account id and country, never address or phone
 
-**Decided as the handover recommended, pending Simon's confirmation** — see `CLAUDE.local.md`.
+**Decided as the handover recommended, and confirmed by Simon on 2026-11-21.**
 Matching a payment to a person is the point, so those four go out. `Present::redact()` drops
 `shipping_info`, `auction_info` and every `payer_info` field but five **before a row is cached**,
 so the state directory never holds an address either. **Allowlists, not denylists**: a section
