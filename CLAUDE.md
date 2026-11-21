@@ -11,7 +11,7 @@ agent can answer them without holding a PayPal login.
 
 **`README.md` is the operator's document; this file is why the code is the way it is.**
 `CLAUDE.local.md`, gitignored, records where it runs, which accounts it reads and what is
-undecided. **Unreleased**; the structure follows `saasumcp`, which followed `xfmcp`. *Releasing*
+undecided. **Released as 0.1.0, 2026-11-21**; the structure follows `saasumcp`, which followed `xfmcp`. *Releasing*
 below is the procedure.
 
 ## Commands
