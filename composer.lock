@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "082e6f68d4b38204be3335f3d0840a1d",
+    "content-hash": "e8fbcd1f81046ed34265168481dbdd35",
     "packages": [
         {
             "name": "brick/math",
@@ -865,16 +865,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.13.5",
+            "version": "2.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "5aa00c5418afbe3f435910af0e98cb03d659c49d"
+                "reference": "2bd3dccf56e99cdacf74b1ad5e06a08a5a7739f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5aa00c5418afbe3f435910af0e98cb03d659c49d",
-                "reference": "5aa00c5418afbe3f435910af0e98cb03d659c49d",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2bd3dccf56e99cdacf74b1ad5e06a08a5a7739f2",
+                "reference": "2bd3dccf56e99cdacf74b1ad5e06a08a5a7739f2",
                 "shasum": ""
             },
             "require": {
@@ -964,7 +964,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.13.5"
+                "source": "https://github.com/guzzle/psr7/tree/2.13.6"
             },
             "funding": [
                 {
@@ -980,8 +980,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-19T20:34:53+00:00",
-            "published-time": "2026-11-19T20:36:04+00:00"
+            "time": "2026-11-21T23:48:40+00:00",
+            "published-time": "2026-11-21T23:49:39+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
@@ -1132,16 +1132,16 @@
         },
         {
             "name": "hampel/paypal-api",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hampel/paypal-api.git",
-                "reference": "8fe4b8111b9aa97cbc0853e4d5a332b7a57e8a4e"
+                "reference": "23a3e22ea84d6065e7c7182078be10fba9b1c388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hampel/paypal-api/zipball/8fe4b8111b9aa97cbc0853e4d5a332b7a57e8a4e",
-                "reference": "8fe4b8111b9aa97cbc0853e4d5a332b7a57e8a4e",
+                "url": "https://api.github.com/repos/hampel/paypal-api/zipball/23a3e22ea84d6065e7c7182078be10fba9b1c388",
+                "reference": "23a3e22ea84d6065e7c7182078be10fba9b1c388",
                 "shasum": ""
             },
             "require": {
@@ -1196,27 +1196,27 @@
                 "issues": "https://github.com/hampel/paypal-api/issues",
                 "source": "https://github.com/hampel/paypal-api"
             },
-            "time": "2026-11-18T04:22:31+00:00",
-            "published-time": "2026-11-18T04:24:45+00:00"
+            "time": "2026-11-21T23:09:54+00:00",
+            "published-time": "2026-11-21T23:18:05+00:00"
         },
         {
             "name": "hampel/paypal-api-laravel",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hampel/paypal-api-laravel.git",
-                "reference": "c1a494ff736470b184dc100a4353b070cb90c8bd"
+                "reference": "85e5b60840124d277c7a2c0d5d9ae58bff8b003f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hampel/paypal-api-laravel/zipball/c1a494ff736470b184dc100a4353b070cb90c8bd",
-                "reference": "c1a494ff736470b184dc100a4353b070cb90c8bd",
+                "url": "https://api.github.com/repos/hampel/paypal-api-laravel/zipball/85e5b60840124d277c7a2c0d5d9ae58bff8b003f",
+                "reference": "85e5b60840124d277c7a2c0d5d9ae58bff8b003f",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.8|^8.0",
                 "guzzlehttp/psr7": "^2.0|^3.0",
-                "hampel/paypal-api": "^0.1",
+                "hampel/paypal-api": "^0.1|^0.2",
                 "illuminate/contracts": "^12.71|^13.40",
                 "illuminate/http": "^12.71|^13.40",
                 "illuminate/support": "^12.71|^13.40",
@@ -1273,8 +1273,8 @@
                 "issues": "https://github.com/hampel/paypal-api-laravel/issues",
                 "source": "https://github.com/hampel/paypal-api-laravel"
             },
-            "time": "2026-11-18T05:00:26+00:00",
-            "published-time": "2026-11-18T05:00:58+00:00"
+            "time": "2026-11-21T23:28:15+00:00",
+            "published-time": "2026-11-21T23:56:01+00:00"
         },
         {
             "name": "illuminate/bus",

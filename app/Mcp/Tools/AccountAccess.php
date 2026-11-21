@@ -39,11 +39,11 @@ class AccountAccess extends PayPalTool
             'accepted' => true,
             'app_id' => $grant->appId,
             'can_search_transactions' => $grant->canSearchTransactions(),
-            'can_read_subscriptions' => $grant->hasScope(Gateway::SUBSCRIPTIONS_SCOPE),
+            'can_read_subscriptions' => $grant->canReadSubscriptions(),
             'token_expires' => $grant->expiresAt->format(DATE_ATOM),
             'scopes' => $grant->scopes(),
             'note' => match (true) {
-                $grant->canSearchTransactions() && $grant->hasScope(Gateway::SUBSCRIPTIONS_SCOPE) => 'The app has Transaction Search and Subscriptions: every tool here can be used.',
+                $grant->canSearchTransactions() && $grant->canReadSubscriptions() => 'The app has Transaction Search and Subscriptions: every tool here can be used.',
                 $grant->canSearchTransactions() => 'The app lacks Subscriptions, so get-subscription will be refused. Tick it on the app in PayPal\'s developer dashboard.',
                 default => 'The app lacks Transaction Search, so transaction and balance tools will be refused. Tick it on the app in PayPal\'s developer dashboard.',
             },

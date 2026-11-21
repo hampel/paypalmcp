@@ -6,6 +6,11 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- Requires `hampel/paypal-api` ^0.2, and asks its `AccessGrant::canReadSubscriptions()` whether an
+  app has Subscriptions, in place of a scope this server kept itself.
+
 ## [0.1.0] - 2026-11-21
 
 ### Added

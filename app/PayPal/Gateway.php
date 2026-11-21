@@ -43,13 +43,6 @@ class Gateway
      */
     public const LOGIN_ALLOWANCE = 3;
 
-    /**
-     * The scope the dashboard's Subscriptions feature adds, and reading a subscription needs.
-     * Transaction Search alone grants only `subscriptions/confirm-payment`, and a read on that token
-     * is refused PERMISSION_DENIED - measured on two sandbox apps, 2026-11-21.
-     */
-    public const SUBSCRIPTIONS_SCOPE = 'https://uri.paypal.com/services/subscriptions';
-
     /** Requests sent since resetLastSpent(), token requests included - a tool may make several calls. */
     private int $lastSpent = 0;
 

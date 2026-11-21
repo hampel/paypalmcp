@@ -26,7 +26,7 @@
         "php": "^8.3",
         "guzzlehttp/guzzle": "^7.8",
         "hampel/console-report": "^2.2",
-        "hampel/paypal-api": "^0.1",
+        "hampel/paypal-api": "^0.2",
         "hampel/paypal-api-laravel": "^0.1",
         "illuminate/http": "^13.0",
         "laravel-zero/foundation": "^13.23",

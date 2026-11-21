@@ -208,7 +208,7 @@ class Validate extends Command
             ? $this->checkOk('Transaction Search', 'in the token\'s scopes')
             : $this->checkFail('Transaction Search', 'not in the token\'s scopes - tick Transaction Search on the app in PayPal\'s developer dashboard; a cached token keeps its old scopes for up to nine hours');
 
-        $grant->hasScope(Gateway::SUBSCRIPTIONS_SCOPE)
+        $grant->canReadSubscriptions()
             ? $this->checkOk('Subscriptions', 'in the token\'s scopes')
             : $this->checkFail('Subscriptions', 'not in the token\'s scopes - tick Subscriptions on the app in PayPal\'s developer dashboard; a cached token keeps its old scopes for up to nine hours');
 
