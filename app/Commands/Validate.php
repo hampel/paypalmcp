@@ -25,7 +25,7 @@ use LaravelZero\Framework\Commands\Command;
  * the server's user cannot touch.
  *
  * ONLINE, IT ASKS PAYPAL FOR WHAT THE TOOLS NEED, one cheap request each: a token, whose scopes say
- * whether the app has Transaction Search; a one-row search; the balances; and a subscription read
+ * whether the app has Transaction Search and Subscriptions; a one-row search; the balances; and a subscription read
  * of an id that does not exist, which a permitted app answers with "not found". Every probe goes
  * through the gateway and counts against the account's daily budget: four requests an account, or
  * three with a cached token.
@@ -207,6 +207,10 @@ class Validate extends Command
         $grant->canSearchTransactions()
             ? $this->checkOk('Transaction Search', 'in the token\'s scopes')
             : $this->checkFail('Transaction Search', 'not in the token\'s scopes - tick Transaction Search on the app in PayPal\'s developer dashboard; a cached token keeps its old scopes for up to nine hours');
+
+        $grant->hasScope(Gateway::SUBSCRIPTIONS_SCOPE)
+            ? $this->checkOk('Subscriptions', 'in the token\'s scopes')
+            : $this->checkFail('Subscriptions', 'not in the token\'s scopes - tick Subscriptions on the app in PayPal\'s developer dashboard; a cached token keeps its old scopes for up to nine hours');
 
         foreach ($this->probes() as $label => $probe) {
             $this->probe($gateway, $account, $label, $probe);

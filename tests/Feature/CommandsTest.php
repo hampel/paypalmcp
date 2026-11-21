@@ -69,6 +69,17 @@ it('fails an app without Transaction Search', function () {
     expect($exit)->toBe(1)->and($output)->toMatch('/\[fail\] Transaction Search/');
 });
 
+it('fails an app without Subscriptions', function () {
+    fakeEveryPayPalProbe(token: Http::response(['access_token' => 'x', 'expires_in' => 32400, 'scope' => 'openid https://uri.paypal.com/services/reporting/search/read', 'app_id' => 'APP-1']));
+    useAccounts(['acme' => ['name' => 'Acme', 'environment' => 'sandbox']]);
+
+    [$exit, $output] = runCommand('app:validate');
+
+    expect($exit)->toBe(1)
+        ->and($output)->toMatch('/\[ ok \] Transaction Search/')
+        ->and($output)->toMatch('/\[fail\] Subscriptions\s+not in the token/');
+});
+
 it('stops probing an account whose secret is refused', function () {
     fakePayPal([], token: [['error' => 'invalid_client', 'error_description' => 'Client Authentication failed'], 401]);
     useAccounts(['acme' => ['name' => 'Acme', 'environment' => 'sandbox']]);

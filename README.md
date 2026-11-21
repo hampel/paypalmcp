@@ -11,7 +11,7 @@ Both are the point of it; see *Safety*.
 ## Requirements
 
 PHP 8.3 or later. A PayPal REST app for each account, made for this server alone, with
-Transaction Search ticked.
+Transaction Search and Subscriptions ticked.
 
 ## Installation
 
@@ -75,12 +75,17 @@ skips them; `--strict` exits 2 on a warning.
 of PayPal's developer dashboard, so it can be revoked without touching anything else and its
 token cache is its own.
 
-**Tick Transaction Search on it.** Every transaction and balance tool needs it, and
-`account-access` and `app:validate` read from the token whether it is there. A change to the
-app's features can take until the cached token expires, up to nine hours, to show.
+**Tick Transaction Search and Subscriptions on it, and nothing else.** Every transaction and
+balance tool needs Transaction Search; `get-subscription` needs Subscriptions, which Transaction
+Search does not grant. `account-access` and `app:validate` read from the token whether each is
+there.
 
-**An app's token can do everything the app may, refunds and payouts included.** PayPal has no
-read-only app. What keeps this server read-only is that it has no code that writes; see *Safety*.
+**A change to an existing app's features waits for its token to expire**, up to nine hours:
+PayPal hands back the same token until then, so forgetting the cached one does not help. A new
+app's first token has its features at once.
+
+**An app's token can do more than its ticked features say.** With only those two ticked, a sandbox
+app's token still carried refund and payment scopes (2026-11-21): PayPal has no read-only app. What keeps this server read-only is that it has no code that writes; see *Safety*.
 
 ## Registering the server
 
@@ -99,7 +104,7 @@ Any MCP client that starts a stdio server works the same way: the command is
 | tool | answers | costs |
 |---|---|---|
 | `list-accounts` | the configured accounts and their budgets | nothing |
-| `account-access` | whether the app is accepted, and has Transaction Search | a token, or nothing |
+| `account-access` | whether the app is accepted, and has the features the tools need | a token, or nothing |
 | `search-transactions` | rows in a range, by event code, currency or status | about 1 a month |
 | `find-payer` | rows whose payer matches an email, account id or name | about 1 a month |
 | `transaction-totals` | count, gross, fees and net by currency and event code | about 1 a month |

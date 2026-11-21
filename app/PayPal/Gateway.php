@@ -43,6 +43,13 @@ class Gateway
      */
     public const LOGIN_ALLOWANCE = 3;
 
+    /**
+     * The scope the dashboard's Subscriptions feature adds, and reading a subscription needs.
+     * Transaction Search alone grants only `subscriptions/confirm-payment`, and a read on that token
+     * is refused PERMISSION_DENIED - measured on two sandbox apps, 2026-11-21.
+     */
+    public const SUBSCRIPTIONS_SCOPE = 'https://uri.paypal.com/services/subscriptions';
+
     /** Requests sent since resetLastSpent(), token requests included - a tool may make several calls. */
     private int $lastSpent = 0;
 
@@ -200,7 +207,7 @@ class Gateway
             $e instanceof NotPermittedException => sprintf(
                 'PayPal refused %s permission for this: the app lacks a feature it needs. Transactions and balances '
                 .'need Transaction Search ticked on the app in PayPal\'s developer dashboard; reading subscriptions '
-                .'needs a feature of its own, which Transaction Search alone does not grant. A change to an app\'s '
+                .'needs Subscriptions ticked as well. A change to an app\'s '
                 .'features reaches its token only when that token expires, up to nine hours. PayPal said: %s',
                 $whose,
                 $this->paypalSaid($e),

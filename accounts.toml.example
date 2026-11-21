@@ -22,8 +22,8 @@ environment = "sandbox"
 # daily_budget = 500
 
 # A REST app made for this server alone, from the Apps & Credentials page of PayPal's developer
-# dashboard, with Transaction Search ticked - so it can be revoked without touching anything else
-# and its token is its own. Leave both lines out until the account has one: the account is then
+# dashboard, with Transaction Search and Subscriptions ticked and nothing else - so it can be
+# revoked without touching anything else and its token is its own. Leave both lines out until the account has one: the account is then
 # listed, and every call to it refused.
 client_id = "AXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 secret = "EXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"

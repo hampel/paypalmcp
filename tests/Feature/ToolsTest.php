@@ -24,7 +24,7 @@ it('says whether the app has Transaction Search, from the token alone', function
 
     $answer = answer(AccountAccess::class, ['account' => 'acme']);
 
-    expect($answer)->toMatchArray(['accepted' => true, 'app_id' => 'APP-80W284485P519543T', 'can_search_transactions' => true])
+    expect($answer)->toMatchArray(['accepted' => true, 'app_id' => 'APP-80W284485P519543T', 'can_search_transactions' => true, 'can_read_subscriptions' => true])
         ->and($answer['account'])->toBe(['account' => 'acme', 'name' => 'Acme Example Pty Ltd', 'environment' => 'sandbox'])
         ->and(dataRequests())->toBeEmpty()
         ->and(sentRequests()[0]->url())->toStartWith('https://api-m.sandbox.paypal.com/');

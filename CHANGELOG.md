@@ -17,5 +17,5 @@ All notable changes to this project are recorded here. The format follows
   for 30 days, and a `coverage` block on every answer saying how far PayPal's reporting reached.
 - Payers shown by name, PayPal login email, account id and country; phone numbers and addresses
   withheld from answers and from the cache.
-- `app:config` and `app:validate`, which asks PayPal for a token, a search, the balances and a
-  subscription read for each account.
+- `app:config` and `app:validate`, which checks each account's app has Transaction Search and
+  Subscriptions, and asks PayPal for a search, the balances and a subscription read.
