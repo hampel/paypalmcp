@@ -234,9 +234,11 @@ class Validate extends Command
                 static fn ($balance): ?string => $balance->currency,
                 $paypal->transactions()->balances()->balances,
             ))) ?: 'yes, no currency held',
-            // an id no subscription has: "not found" means the app may read subscriptions
+            // an id no subscription has: "not found" means the app may read subscriptions. It must be
+            // I- and twelve characters, as PayPal's are; a longer one is refused as malformed (sandbox,
+            // 2026-11-21), which proves nothing about access
             'Reads subscriptions' => static function (Client $paypal): string {
-                $paypal->subscriptions()->find('I-PAYPALMCPPROBE0');
+                $paypal->subscriptions()->find('I-PAYPALPROBE0');
 
                 return 'yes';
             },
