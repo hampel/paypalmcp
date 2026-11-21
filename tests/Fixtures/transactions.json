@@ -1,0 +1,676 @@
+{
+    "transaction_details": [
+        {
+            "transaction_info": {
+                "paypal_account_id": "6STWC2LSUYYYE",
+                "transaction_id": "0CX39774H4872821R",
+                "paypal_reference_id": "30T259085R7827349",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0000",
+                "transaction_initiation_date": "2026-11-18T00:31:37Z",
+                "transaction_updated_date": "2026-11-18T00:31:37Z",
+                "transaction_amount": {
+                    "currency_code": "AUD",
+                    "value": "5.62"
+                },
+                "fee_amount": {
+                    "currency_code": "AUD",
+                    "value": "-0.49"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "AUD",
+                    "value": "5005.13"
+                },
+                "available_balance": {
+                    "currency_code": "AUD",
+                    "value": "5005.13"
+                },
+                "protection_eligibility": "01",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "account_id": "6STWC2LSUYYYE",
+                "email_address": "buyer@example.com",
+                "phone_number": {
+                    "country_code": "1",
+                    "national_number": "4085550100"
+                },
+                "address_status": "N",
+                "payer_status": "Y",
+                "payer_name": {
+                    "given_name": "Alex",
+                    "surname": "Example",
+                    "alternate_full_name": "Alex Example"
+                },
+                "country_code": "US",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {
+                "name": "Alex Example",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "paypal_account_id": "6STWC2LSUYYYE",
+                "transaction_id": "2LF12426EC4939423",
+                "paypal_reference_id": "16C27517YF468605Y",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0000",
+                "transaction_initiation_date": "2026-11-18T00:32:33Z",
+                "transaction_updated_date": "2026-11-18T00:32:33Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "4.00"
+                },
+                "fee_amount": {
+                    "currency_code": "USD",
+                    "value": "-0.44"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "3.56"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "3.56"
+                },
+                "protection_eligibility": "01",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "account_id": "6STWC2LSUYYYE",
+                "email_address": "buyer@example.com",
+                "phone_number": {
+                    "country_code": "1",
+                    "national_number": "4085550100"
+                },
+                "address_status": "N",
+                "payer_status": "Y",
+                "payer_name": {
+                    "given_name": "Alex",
+                    "surname": "Example",
+                    "alternate_full_name": "Alex Example"
+                },
+                "country_code": "US",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {
+                "name": "Alex Example",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "transaction_id": "3VF18423S4657572D",
+                "paypal_reference_id": "2LF12426EC4939423",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0200",
+                "transaction_initiation_date": "2026-11-18T00:32:33Z",
+                "transaction_updated_date": "2026-11-18T00:32:33Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "-3.56"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "0.00"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "0.00"
+                },
+                "protection_eligibility": "02",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "address_status": "N",
+                "payer_name": {},
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {},
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "transaction_id": "7BG29165SJ329434T",
+                "paypal_reference_id": "2LF12426EC4939423",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0200",
+                "transaction_initiation_date": "2026-11-18T00:32:33Z",
+                "transaction_updated_date": "2026-11-18T00:32:33Z",
+                "transaction_amount": {
+                    "currency_code": "AUD",
+                    "value": "5.01"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "AUD",
+                    "value": "5010.14"
+                },
+                "available_balance": {
+                    "currency_code": "AUD",
+                    "value": "5010.14"
+                },
+                "protection_eligibility": "02",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "address_status": "N",
+                "payer_name": {},
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {},
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "transaction_id": "149178512D307191A",
+                "paypal_reference_id": "56K338415N2054429",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0201",
+                "transaction_initiation_date": "2026-11-18T00:36:19Z",
+                "transaction_updated_date": "2026-11-18T00:36:19Z",
+                "transaction_amount": {
+                    "currency_code": "AUD",
+                    "value": "-1000.00"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "AUD",
+                    "value": "4010.14"
+                },
+                "available_balance": {
+                    "currency_code": "AUD",
+                    "value": "4010.14"
+                },
+                "protection_eligibility": "02",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "address_status": "N",
+                "payer_name": {}
+            },
+            "shipping_info": {},
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "transaction_id": "56K338415N2054429",
+                "paypal_reference_id": "149178512D307191A",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0201",
+                "transaction_initiation_date": "2026-11-18T00:36:19Z",
+                "transaction_updated_date": "2026-11-18T00:36:19Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "667.10"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "667.10"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "667.10"
+                },
+                "protection_eligibility": "02",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "address_status": "N",
+                "payer_name": {}
+            },
+            "shipping_info": {},
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "paypal_account_id": "6STWC2LSUYYYE",
+                "transaction_id": "5NU12798C4454121P",
+                "paypal_reference_id": "7GH28593UL627271U",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0000",
+                "transaction_initiation_date": "2026-11-18T00:37:16Z",
+                "transaction_updated_date": "2026-11-18T00:37:16Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "4.00"
+                },
+                "fee_amount": {
+                    "currency_code": "USD",
+                    "value": "-0.44"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "670.66"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "670.66"
+                },
+                "protection_eligibility": "01",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "account_id": "6STWC2LSUYYYE",
+                "email_address": "buyer@example.com",
+                "phone_number": {
+                    "country_code": "1",
+                    "national_number": "4085550100"
+                },
+                "address_status": "N",
+                "payer_status": "Y",
+                "payer_name": {
+                    "given_name": "Alex",
+                    "surname": "Example",
+                    "alternate_full_name": "Alex Example"
+                },
+                "country_code": "US",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {
+                "name": "Alex Example",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "transaction_id": "88420536H8652431D",
+                "paypal_reference_id": "5NU12798C4454121P",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0200",
+                "transaction_initiation_date": "2026-11-18T00:37:16Z",
+                "transaction_updated_date": "2026-11-18T00:37:16Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "-3.56"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "667.10"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "667.10"
+                },
+                "protection_eligibility": "02",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "address_status": "N",
+                "payer_name": {},
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {},
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "transaction_id": "8NE82741XL718204J",
+                "paypal_reference_id": "5NU12798C4454121P",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0200",
+                "transaction_initiation_date": "2026-11-18T00:37:16Z",
+                "transaction_updated_date": "2026-11-18T00:37:16Z",
+                "transaction_amount": {
+                    "currency_code": "AUD",
+                    "value": "5.01"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "AUD",
+                    "value": "4015.15"
+                },
+                "available_balance": {
+                    "currency_code": "AUD",
+                    "value": "4015.15"
+                },
+                "protection_eligibility": "02",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "address_status": "N",
+                "payer_name": {},
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {},
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "paypal_account_id": "6STWC2LSUYYYE",
+                "transaction_id": "1HV08373L2678463M",
+                "paypal_reference_id": "75P18554JL8065701",
+                "paypal_reference_id_type": "TXN",
+                "transaction_event_code": "T0000",
+                "transaction_initiation_date": "2026-11-18T00:47:14Z",
+                "transaction_updated_date": "2026-11-18T00:47:14Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "4.00"
+                },
+                "fee_amount": {
+                    "currency_code": "USD",
+                    "value": "-0.44"
+                },
+                "transaction_status": "S",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "670.66"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "670.66"
+                },
+                "protection_eligibility": "01",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "account_id": "6STWC2LSUYYYE",
+                "email_address": "buyer@example.com",
+                "phone_number": {
+                    "country_code": "1",
+                    "national_number": "4085550100"
+                },
+                "address_status": "N",
+                "payer_status": "Y",
+                "payer_name": {
+                    "given_name": "Alex",
+                    "surname": "Example",
+                    "alternate_full_name": "Alex Example"
+                },
+                "country_code": "US",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "shipping_info": {
+                "name": "Alex Example",
+                "address": {
+                    "line1": "1 Example Street",
+                    "city": "Springfield",
+                    "state": "CA",
+                    "country_code": "US",
+                    "postal_code": "95131"
+                }
+            },
+            "cart_info": {},
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "paypal_account_id": "QYR5Z8XDVJNXQ",
+                "transaction_id": "3DR34135EM370681V",
+                "paypal_reference_id": "I-ETC83DNY7VWA",
+                "paypal_reference_id_type": "RP",
+                "transaction_event_code": "T0002",
+                "transaction_initiation_date": "2026-11-18T01:44:05Z",
+                "transaction_updated_date": "2026-11-18T01:44:05Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "10.00"
+                },
+                "fee_amount": {
+                    "currency_code": "USD",
+                    "value": "-0.64"
+                },
+                "transaction_status": "S",
+                "transaction_subject": "ZZ sandbox USD 10.00 per day - 20261118T011219Z",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "680.02"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "680.02"
+                },
+                "custom_field": "harness-20261118T013634Z",
+                "protection_eligibility": "01",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "account_id": "QYR5Z8XDVJNXQ",
+                "email_address": "buyer@example.com",
+                "phone_number": {
+                    "country_code": "1",
+                    "national_number": "4085550100"
+                },
+                "address_status": "N",
+                "payer_status": "Y",
+                "payer_name": {
+                    "given_name": "Alex",
+                    "surname": "Example",
+                    "alternate_full_name": "Alex Example"
+                },
+                "country_code": "US"
+            },
+            "shipping_info": {
+                "name": "Alex Example"
+            },
+            "cart_info": {
+                "item_details": [
+                    {
+                        "item_quantity": "1",
+                        "item_unit_price": {
+                            "currency_code": "USD",
+                            "value": "10.00"
+                        },
+                        "item_amount": {
+                            "currency_code": "USD",
+                            "value": "10.00"
+                        },
+                        "total_item_amount": {
+                            "currency_code": "USD",
+                            "value": "10.00"
+                        }
+                    }
+                ]
+            },
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        },
+        {
+            "transaction_info": {
+                "paypal_account_id": "QYR5Z8XDVJNXQ",
+                "transaction_id": "6US23994V7736042Y",
+                "paypal_reference_id": "I-AKYE3A6CY2YH",
+                "paypal_reference_id_type": "RP",
+                "transaction_event_code": "T0002",
+                "transaction_initiation_date": "2026-11-18T01:46:59Z",
+                "transaction_updated_date": "2026-11-18T01:46:59Z",
+                "transaction_amount": {
+                    "currency_code": "USD",
+                    "value": "10.00"
+                },
+                "fee_amount": {
+                    "currency_code": "USD",
+                    "value": "-0.64"
+                },
+                "transaction_status": "S",
+                "transaction_subject": "Account Upgrade: Premium (harness)",
+                "ending_balance": {
+                    "currency_code": "USD",
+                    "value": "689.38"
+                },
+                "available_balance": {
+                    "currency_code": "USD",
+                    "value": "689.38"
+                },
+                "protection_eligibility": "01",
+                "instrument_type": "PayPal",
+                "instrument_sub_type": "PayPal Wallet"
+            },
+            "payer_info": {
+                "account_id": "QYR5Z8XDVJNXQ",
+                "email_address": "buyer@example.com",
+                "phone_number": {
+                    "country_code": "1",
+                    "national_number": "4085550100"
+                },
+                "address_status": "N",
+                "payer_status": "Y",
+                "payer_name": {
+                    "given_name": "Alex",
+                    "surname": "Example",
+                    "alternate_full_name": "Alex Example"
+                },
+                "country_code": "US"
+            },
+            "shipping_info": {
+                "name": "Alex Example"
+            },
+            "cart_info": {
+                "item_details": [
+                    {
+                        "item_quantity": "1",
+                        "item_unit_price": {
+                            "currency_code": "USD",
+                            "value": "10.00"
+                        },
+                        "item_amount": {
+                            "currency_code": "USD",
+                            "value": "10.00"
+                        },
+                        "total_item_amount": {
+                            "currency_code": "USD",
+                            "value": "10.00"
+                        }
+                    }
+                ]
+            },
+            "store_info": {},
+            "auction_info": {},
+            "incentive_info": {}
+        }
+    ],
+    "account_number": "XZXSPECPDZHZU",
+    "start_date": "2026-11-18T00:00:00Z",
+    "end_date": "2026-11-18T01:59:59Z",
+    "last_refreshed_datetime": "2026-11-18T01:59:59Z",
+    "page": 1,
+    "total_items": 12,
+    "total_pages": 1,
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v1/reporting/transactions?start_date=2026-11-18T00%3A00%3A00Z&fields=all&end_date=2026-11-18T02%3A00%3A00Z&page_size=500&page=1",
+            "rel": "self",
+            "method": "GET",
+            "encType": "application/json"
+        }
+    ]
+}

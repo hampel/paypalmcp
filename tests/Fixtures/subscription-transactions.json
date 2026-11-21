@@ -1,0 +1,35 @@
+{
+    "transactions": [
+        {
+            "id": "3DR34135EM370681V",
+            "amount_with_breakdown": {
+                "gross_amount": {
+                    "currency_code": "USD",
+                    "value": "10.00"
+                },
+                "fee_amount": {
+                    "currency_code": "USD",
+                    "value": "0.64"
+                },
+                "net_amount": {
+                    "currency_code": "USD",
+                    "value": "9.36"
+                }
+            },
+            "payer_name": {
+                "given_name": "Alex",
+                "surname": "Example"
+            },
+            "payer_email": "buyer@example.com",
+            "time": "2026-11-18T01:44:05.000Z",
+            "status": "COMPLETED"
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api-m.sandbox.paypal.com/v1/billing/subscriptions/I-ETC83DNY7VWA/transactions?start_time=2026-11-17T00%3A00%3A00Z&end_time=2026-11-19T00%3A00%3A00Z",
+            "rel": "SELF",
+            "method": "GET"
+        }
+    ]
+}
