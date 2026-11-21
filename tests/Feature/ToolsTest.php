@@ -210,7 +210,9 @@ it('reads a subscription and its payments, without the subscriber\'s address', f
         ->and($answer['subscription']['billing_info']['next_billing_time'])->toBe('2026-11-19T10:00:00Z')
         ->and($answer['subscription'])->not->toHaveKey('links')
         ->and(json_encode($answer))->not->toContain('Secret Street')
-        ->and($answer['payments'][0])->toHaveKeys(['transaction_id', 'gross', 'fee']);
+        ->and($answer['payments'][0])->toHaveKeys(['transaction_id', 'gross', 'fee'])
+        // PayPal writes it positive here; shown negative, as transaction search shows it
+        ->and($answer['payments'][0]['fee']['value'])->toStartWith('-');
 });
 
 it('says a subscription is not on this account', function () {

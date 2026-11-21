@@ -151,7 +151,10 @@ final class Present
             'status' => $payment->status,
             'time' => self::time($payment->time),
             'gross' => self::money($payment->gross),
-            'fee' => self::money($payment->fee),
+            // PayPal writes this fee positive, where transaction search writes the same fee negative
+            // on the same payment (sandbox, 2026-11-21): shown negative, so gross + fee = net in
+            // every tool's answer
+            'fee' => self::money($payment->fee === null || $payment->fee->isNegative() ? $payment->fee : $payment->fee->negate()),
             'net' => self::money($payment->net),
             'payer_email' => $payment->payerEmail,
             'payer_name' => $payment->payerName,
