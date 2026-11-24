@@ -6,10 +6,13 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-25
+
 ### Changed
 
 - Requires `hampel/paypal-api` ^0.2, and asks its `AccessGrant::canReadSubscriptions()` whether an
   app has Subscriptions, in place of a scope this server kept itself.
+- Built with `hampel/paypal-api-laravel` 0.1.2 and Guzzle 7.17.0.
 
 ## [0.1.0] - 2026-11-21
 
